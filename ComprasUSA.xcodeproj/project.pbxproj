@@ -15,7 +15,7 @@
 		C4EEC31A1F8AB5C40091F60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EEC3191F8AB5C40091F60B /* AppDelegate.swift */; };
 		C4EEC31C1F8AB5C40091F60B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EEC31B1F8AB5C40091F60B /* ViewController.swift */; };
 		C4EEC31F1F8AB5C40091F60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EEC31D1F8AB5C40091F60B /* Main.storyboard */; };
-		C4EEC3221F8AB5C40091F60B /* Wishlist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4EEC3201F8AB5C40091F60B /* Wishlist.xcdatamodeld */; };
+		C4EEC3221F8AB5C40091F60B /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4EEC3201F8AB5C40091F60B /* ComprasUSA.xcdatamodeld */; };
 		C4EEC3271F8AB5C40091F60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EEC3251F8AB5C40091F60B /* LaunchScreen.storyboard */; };
 		C4EEC3381F8ABD4F0091F60B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EEC3371F8ABD4F0091F60B /* Media.xcassets */; };
 		C4EEC33A1F8AC7170091F60B /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EEC3391F8AC7170091F60B /* ProductTableViewController.swift */; };
@@ -69,7 +69,7 @@
 		C4EEC30D1F8AB5C40091F60B = {
 			isa = PBXGroup;
 			children = (
-				C4EEC3181F8AB5C40091F60B /* Wishlist */,
+				C4EEC3181F8AB5C40091F60B /* ComprasUSA */,
 				C4EEC3171F8AB5C40091F60B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,13 +82,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C4EEC3181F8AB5C40091F60B /* Wishlist */ = {
+		C4EEC3181F8AB5C40091F60B /* ComprasUSA */ = {
 			isa = PBXGroup;
 			children = (
 				C44B66921F95737B00C15DD9 /* Utils */,
 				C4EEC3491F8AE28B0091F60B /* Images */,
 				C4EEC3281F8AB5C40091F60B /* Info.plist */,
-				C4EEC3201F8AB5C40091F60B /* Wishlist.xcdatamodeld */,
+				C4EEC3201F8AB5C40091F60B /* ComprasUSA.xcdatamodeld */,
 				C4EEC3371F8ABD4F0091F60B /* Media.xcassets */,
 				C4EEC3191F8AB5C40091F60B /* AppDelegate.swift */,
 				C4EEC3441F8AD2110091F60B /* Extensions */,
@@ -96,7 +96,7 @@
 				C4EEC33D1F8AC77C0091F60B /* Storyboard */,
 				C44B66951F957A6D00C15DD9 /* Settings.bundle */,
 			);
-			path = Wishlist;
+			path = ComprasUSA;
 			sourceTree = "<group>";
 		};
 		C4EEC33B1F8AC73E0091F60B /* Controller */ = {
@@ -214,7 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EEC3481F8AE0A40091F60B /* ProductRegisterViewController.swift in Sources */,
-				C4EEC3221F8AB5C40091F60B /* Wishlist.xcdatamodeld in Sources */,
+				C4EEC3221F8AB5C40091F60B /* ComprasUSA.xcdatamodeld in Sources */,
 				C4EEC31C1F8AB5C40091F60B /* ViewController.swift in Sources */,
 				C4ABF5261F93C48B00EB601C /* StateRegisterViewController.swift in Sources */,
 				C44B66981F9D5E6300C15DD9 /* ResumeViewController.swift in Sources */,
@@ -363,7 +363,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3PT499D5S;
-				INFOPLIST_FILE = "$(SRCROOT)/Wishlist/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ComprasUSA/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alextavella.ComprasUSA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,7 +379,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3PT499D5S;
-				INFOPLIST_FILE = "$(SRCROOT)/Wishlist/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ComprasUSA/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alextavella.ComprasUSA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,13 +412,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C4EEC3201F8AB5C40091F60B /* Wishlist.xcdatamodeld */ = {
+		C4EEC3201F8AB5C40091F60B /* ComprasUSA.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				C4EEC3211F8AB5C40091F60B /* Wishlist.xcdatamodel */,
 			);
 			currentVersion = C4EEC3211F8AB5C40091F60B /* Wishlist.xcdatamodel */;
-			path = Wishlist.xcdatamodeld;
+			path = ComprasUSA.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

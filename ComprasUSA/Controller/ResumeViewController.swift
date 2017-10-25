@@ -60,16 +60,24 @@ class ResumeViewController: UIViewController {
     }
     
     func sum(values: [Double]) -> Double {
-        return values.reduce(0, { $0 + $1 })
+        return self.rounded(value: values.reduce(0, { $0 + $1 }))
     }
     
     func calcReais(products: [Product], iof: Double, quotation: Double) -> [Double] {
         return products.map { (product) -> Double in
-            var tax: Double = 0
+            
+            var result: Double = product.value
+            
             if let state = product.state {
-                tax = state.tax
+                let tax = 0.01 * state.tax
+                result += product.value * tax
             }
-            return (product.value + (product.creditcard ? (tax * iof) : 0)) * quotation
+            
+            if product.creditcard {
+                result += result * (0.01 * iof)
+            }
+            
+            return result * quotation
         }
     }
     
@@ -85,5 +93,10 @@ class ResumeViewController: UIViewController {
         guard let iof: String = UserDefaults.standard.string(forKey: Constants.KEYS.IOF.rawValue) else { return 0 }
         
         return Double(iof)!
+    }
+    
+    func rounded(value: Double) -> Double {
+        let convertion: String = String(format: "%.2f", value)
+        return Double(convertion)!
     }
 }

@@ -223,15 +223,17 @@ class ProductRegisterViewController: UIViewController {
     }
     
     @objc func done() {
-        let rowIndex: Int = pickerView.selectedRow(inComponent: 0)
-        let state: State = states[rowIndex]
-        tfState.text = state.name
-        
-        if product == nil {
-            product = Product(context: context)
+        if states.count > 0 {
+            
+            let rowIndex: Int = pickerView.selectedRow(inComponent: 0)
+            let state: State = states[rowIndex]
+            tfState.text = state.name
+            
+            if product == nil {
+                product = Product(context: context)
+            }
+            product.state = state
         }
-        product.state = state
-        
         cancel()
     }
 }
